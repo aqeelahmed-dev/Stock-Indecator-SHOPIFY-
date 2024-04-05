@@ -1,0 +1,29 @@
+ {
+    "name": "Stock indicator",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enabl-indicator",
+        "label": "Enable",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "sidn-btxt",
+        "label": "Text Before Quantity",
+        "default": " Hurry up Only "
+      },
+      {
+        "type": "text",
+        "id": "sidn-atxt",
+        "label": "Text After Quantity",
+        "default": " Left in Stock "
+      },
+      {
+        "type": "color",
+        "id": "sidn_txtclr",
+        "label": "Text",
+        "default": "#FA8072"
+      }
+    ]
+  },
