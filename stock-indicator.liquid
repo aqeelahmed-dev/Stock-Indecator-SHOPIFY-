@@ -1,0 +1,25 @@
+{% if settings['enabl-indicator'] %}
+  <div id="random-number">
+    <div class="sitxt">
+      <i class="fa-solid fa-volleyball fa-spin"></i> {{ settings['sidn-btxt'] }}&nbsp;
+      {{ 'now' | date: '%s%N' | modulo: 10 | plus: 6 | max: 10 }}&nbsp;
+      {{ settings['sidn-atxt'] }}
+    </div>
+  </div>
+  <hr class="stock-line">
+{% endif %}
+{% style %}
+  .sitxt{
+    Color: {{settings.sidn_txtclr}};
+    margin-bottom: -10px;
+  }
+  .stock-line {
+    width: 80%;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background: linear-gradient(to right, red 20%, #F6F6E9 20%);
+  }
+{% endstyle %}
+
+<script src="https://kit.fontawesome.com/05c7dabbb9.js" crossorigin="anonymous"></script>
